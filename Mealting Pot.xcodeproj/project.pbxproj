@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7D263F31B2CD0D50054009D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D263F21B2CD0D50054009D /* AppDelegate.swift */; };
+		A7D263F51B2CD0D50054009D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D263F41B2CD0D50054009D /* Assets.xcassets */; };
+		A7D263F81B2CD0D50054009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D263F61B2CD0D50054009D /* LaunchScreen.storyboard */; };
+		A7D264031B2CD0D50054009D /* Mealting_PotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D264021B2CD0D50054009D /* Mealting_PotTests.swift */; };
+		A7D2640E1B2CD0D60054009D /* Mealting_PotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2640D1B2CD0D60054009D /* Mealting_PotUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7D263FF1B2CD0D50054009D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7D263E71B2CD0D50054009D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7D263EE1B2CD0D50054009D;
+			remoteInfo = "Mealting Pot";
+		};
+		A7D2640A1B2CD0D60054009D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7D263E71B2CD0D50054009D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7D263EE1B2CD0D50054009D;
+			remoteInfo = "Mealting Pot";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7D263EF1B2CD0D50054009D /* Mealting Pot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mealting Pot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D263F21B2CD0D50054009D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7D263F41B2CD0D50054009D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7D263F71B2CD0D50054009D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7D263F91B2CD0D50054009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D263FE1B2CD0D50054009D /* Mealting PotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mealting PotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D264021B2CD0D50054009D /* Mealting_PotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mealting_PotTests.swift; sourceTree = "<group>"; };
+		A7D264041B2CD0D60054009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D264091B2CD0D60054009D /* Mealting PotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mealting PotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D2640D1B2CD0D60054009D /* Mealting_PotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mealting_PotUITests.swift; sourceTree = "<group>"; };
+		A7D2640F1B2CD0D60054009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7D263EC1B2CD0D50054009D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D263FB1B2CD0D50054009D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D264061B2CD0D60054009D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7D263E61B2CD0D50054009D = {
+			isa = PBXGroup;
+			children = (
+				A7D263F11B2CD0D50054009D /* Mealting Pot */,
+				A7D264011B2CD0D50054009D /* Mealting PotTests */,
+				A7D2640C1B2CD0D60054009D /* Mealting PotUITests */,
+				A7D263F01B2CD0D50054009D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7D263F01B2CD0D50054009D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7D263EF1B2CD0D50054009D /* Mealting Pot.app */,
+				A7D263FE1B2CD0D50054009D /* Mealting PotTests.xctest */,
+				A7D264091B2CD0D60054009D /* Mealting PotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7D263F11B2CD0D50054009D /* Mealting Pot */ = {
+			isa = PBXGroup;
+			children = (
+				A7D263F21B2CD0D50054009D /* AppDelegate.swift */,
+				A7D263F41B2CD0D50054009D /* Assets.xcassets */,
+				A7D263F61B2CD0D50054009D /* LaunchScreen.storyboard */,
+				A7D263F91B2CD0D50054009D /* Info.plist */,
+			);
+			path = "Mealting Pot";
+			sourceTree = "<group>";
+		};
+		A7D264011B2CD0D50054009D /* Mealting PotTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7D264021B2CD0D50054009D /* Mealting_PotTests.swift */,
+				A7D264041B2CD0D60054009D /* Info.plist */,
+			);
+			path = "Mealting PotTests";
+			sourceTree = "<group>";
+		};
+		A7D2640C1B2CD0D60054009D /* Mealting PotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2640D1B2CD0D60054009D /* Mealting_PotUITests.swift */,
+				A7D2640F1B2CD0D60054009D /* Info.plist */,
+			);
+			path = "Mealting PotUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7D263EE1B2CD0D50054009D /* Mealting Pot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7D264121B2CD0D60054009D /* Build configuration list for PBXNativeTarget "Mealting Pot" */;
+			buildPhases = (
+				A7D263EB1B2CD0D50054009D /* Sources */,
+				A7D263EC1B2CD0D50054009D /* Frameworks */,
+				A7D263ED1B2CD0D50054009D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mealting Pot";
+			productName = "Mealting Pot";
+			productReference = A7D263EF1B2CD0D50054009D /* Mealting Pot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7D263FD1B2CD0D50054009D /* Mealting PotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7D264151B2CD0D60054009D /* Build configuration list for PBXNativeTarget "Mealting PotTests" */;
+			buildPhases = (
+				A7D263FA1B2CD0D50054009D /* Sources */,
+				A7D263FB1B2CD0D50054009D /* Frameworks */,
+				A7D263FC1B2CD0D50054009D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7D264001B2CD0D50054009D /* PBXTargetDependency */,
+			);
+			name = "Mealting PotTests";
+			productName = "Mealting PotTests";
+			productReference = A7D263FE1B2CD0D50054009D /* Mealting PotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7D264081B2CD0D60054009D /* Mealting PotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7D264181B2CD0D60054009D /* Build configuration list for PBXNativeTarget "Mealting PotUITests" */;
+			buildPhases = (
+				A7D264051B2CD0D60054009D /* Sources */,
+				A7D264061B2CD0D60054009D /* Frameworks */,
+				A7D264071B2CD0D60054009D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7D2640B1B2CD0D60054009D /* PBXTargetDependency */,
+			);
+			name = "Mealting PotUITests";
+			productName = "Mealting PotUITests";
+			productReference = A7D264091B2CD0D60054009D /* Mealting PotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7D263E71B2CD0D50054009D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = power;
+				TargetAttributes = {
+					A7D263EE1B2CD0D50054009D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 9RHKD5EG85;
+					};
+					A7D263FD1B2CD0D50054009D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A7D263EE1B2CD0D50054009D;
+					};
+					A7D264081B2CD0D60054009D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A7D263EE1B2CD0D50054009D;
+					};
+				};
+			};
+			buildConfigurationList = A7D263EA1B2CD0D50054009D /* Build configuration list for PBXProject "Mealting Pot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7D263E61B2CD0D50054009D;
+			productRefGroup = A7D263F01B2CD0D50054009D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7D263EE1B2CD0D50054009D /* Mealting Pot */,
+				A7D263FD1B2CD0D50054009D /* Mealting PotTests */,
+				A7D264081B2CD0D60054009D /* Mealting PotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7D263ED1B2CD0D50054009D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D263F51B2CD0D50054009D /* Assets.xcassets in Resources */,
+				A7D263F81B2CD0D50054009D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D263FC1B2CD0D50054009D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D264071B2CD0D60054009D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7D263EB1B2CD0D50054009D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D263F31B2CD0D50054009D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D263FA1B2CD0D50054009D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D264031B2CD0D50054009D /* Mealting_PotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D264051B2CD0D60054009D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D2640E1B2CD0D60054009D /* Mealting_PotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7D264001B2CD0D50054009D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7D263EE1B2CD0D50054009D /* Mealting Pot */;
+			targetProxy = A7D263FF1B2CD0D50054009D /* PBXContainerItemProxy */;
+		};
+		A7D2640B1B2CD0D60054009D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7D263EE1B2CD0D50054009D /* Mealting Pot */;
+			targetProxy = A7D2640A1B2CD0D60054009D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7D263F61B2CD0D50054009D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7D263F71B2CD0D50054009D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7D264101B2CD0D60054009D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7D264111B2CD0D60054009D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7D264131B2CD0D60054009D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Mealting Pot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.power.Mealting-Pot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7D264141B2CD0D60054009D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Mealting Pot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.power.Mealting-Pot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7D264161B2CD0D60054009D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mealting PotTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.power.Mealting-PotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mealting Pot.app/Mealting Pot";
+			};
+			name = Debug;
+		};
+		A7D264171B2CD0D60054009D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mealting PotTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.power.Mealting-PotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mealting Pot.app/Mealting Pot";
+			};
+			name = Release;
+		};
+		A7D264191B2CD0D60054009D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Mealting PotUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.power.Mealting-PotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Mealting Pot";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A7D2641A1B2CD0D60054009D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Mealting PotUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.power.Mealting-PotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Mealting Pot";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7D263EA1B2CD0D50054009D /* Build configuration list for PBXProject "Mealting Pot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D264101B2CD0D60054009D /* Debug */,
+				A7D264111B2CD0D60054009D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7D264121B2CD0D60054009D /* Build configuration list for PBXNativeTarget "Mealting Pot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D264131B2CD0D60054009D /* Debug */,
+				A7D264141B2CD0D60054009D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7D264151B2CD0D60054009D /* Build configuration list for PBXNativeTarget "Mealting PotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D264161B2CD0D60054009D /* Debug */,
+				A7D264171B2CD0D60054009D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7D264181B2CD0D60054009D /* Build configuration list for PBXNativeTarget "Mealting PotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D264191B2CD0D60054009D /* Debug */,
+				A7D2641A1B2CD0D60054009D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7D263E71B2CD0D50054009D /* Project object */;
+}
