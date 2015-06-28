@@ -15,10 +15,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
-        self.window!.backgroundColor = UIColor.whiteColor()
-        self.window!.makeKeyAndVisible()
+        guard let window = window else
+        {
+            return false
+        }
+        
+        // TODO: Implement LogIn Manager
+        let loggedIn = true;
+        
+        let mainVC : UIViewController?
+        
+        if loggedIn
+        {
+            guard let homeVC = UIStoryboard(name: "MainStoryboard", bundle: NSBundle.mainBundle()).instantiateInitialViewController() else
+            {
+                return false
+            }
+            mainVC = homeVC
+        }
+        else
+        {
+            guard let logInVC = UIStoryboard(name: "LoginStoryboard", bundle: NSBundle.mainBundle()).instantiateInitialViewController() else
+            {
+                return false
+            }
+            mainVC = logInVC
+        }
+
+        window.rootViewController = mainVC
+        window.backgroundColor = UIColor.whiteColor()
+        window.makeKeyAndVisible()
+        
         return true
     }
 
