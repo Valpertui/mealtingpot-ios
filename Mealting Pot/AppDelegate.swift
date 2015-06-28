@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // TODO: Implement LogIn Manager
         let loggedIn = true;
         
-        let mainVC : UIViewController?
+        let mainVC : UIViewController
         
         if loggedIn
         {
