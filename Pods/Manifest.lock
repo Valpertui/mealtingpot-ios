@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (1.2.3)
+  - HCSStarRatingView (1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `swift-2.0`)
+  - HCSStarRatingView (from `https://github.com/hugocampossousa/HCSStarRatingView.git`)
   - ReactiveCocoa
   - SDWebImage
   - SVProgressHUD
@@ -24,6 +26,8 @@ EXTERNAL SOURCES:
   Alamofire:
     :branch: swift-2.0
     :git: https://github.com/Alamofire/Alamofire.git
+  HCSStarRatingView:
+    :git: https://github.com/hugocampossousa/HCSStarRatingView.git
   SwiftyJSON:
     :branch: xcode7
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
@@ -32,12 +36,16 @@ CHECKOUT OPTIONS:
   Alamofire:
     :commit: fd71afb3a0af2042b9f05a6b9f29317ad4903703
     :git: https://github.com/Alamofire/Alamofire.git
+  HCSStarRatingView:
+    :commit: 52fcff0ec04ba7d1f8c8219c2f24c8ec71258b93
+    :git: https://github.com/hugocampossousa/HCSStarRatingView.git
   SwiftyJSON:
     :commit: fb9f6b43cd8d3684c3129793057eb2a2564e2430
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  HCSStarRatingView: 6fb5c03b4ae2b8a1cca712da20fca99898c69af1
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1

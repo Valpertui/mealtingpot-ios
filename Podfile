@@ -9,3 +9,4 @@ pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branc
 pod 'ReactiveCocoa'
 pod 'SDWebImage'
 pod 'SVProgressHUD'
+pod 'HCSStarRatingView', :git => 'https://github.com/hugocampossousa/HCSStarRatingView.git'
