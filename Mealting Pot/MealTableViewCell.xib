@@ -28,6 +28,9 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="MealCellBackgroundPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="dUS-Wu-5Lw">
                                                 <rect key="frame" x="0.0" y="0.0" width="594" height="348"/>
                                                 <animations/>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="594" height="224"/>
+                                                </variation>
                                             </imageView>
                                             <view opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqr-il-sko">
                                                 <rect key="frame" x="0.0" y="174" width="594" height="174"/>
@@ -101,6 +104,9 @@
                                                                     </stackView>
                                                                 </subviews>
                                                                 <animations/>
+                                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="22" y="25" width="223" height="63"/>
+                                                                </variation>
                                                             </stackView>
                                                         </subviews>
                                                         <animations/>
@@ -112,6 +118,9 @@
                                                             <constraint firstItem="L1T-Yp-8Wc" firstAttribute="centerY" secondItem="JnK-GK-Clu" secondAttribute="centerY" id="pTK-Gk-afh"/>
                                                             <constraint firstItem="L1T-Yp-8Wc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JnK-GK-Clu" secondAttribute="topMargin" priority="999" constant="8" id="wxA-0H-zCC"/>
                                                         </constraints>
+                                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="415" height="112"/>
+                                                        </variation>
                                                     </view>
                                                 </subviews>
                                                 <animations/>
@@ -123,6 +132,9 @@
                                                     <constraint firstItem="JnK-GK-Clu" firstAttribute="height" secondItem="Mqr-il-sko" secondAttribute="height" id="ezD-a8-6cU"/>
                                                     <constraint firstAttribute="bottom" secondItem="JnK-GK-Clu" secondAttribute="bottom" id="sKj-Mm-nAM"/>
                                                 </constraints>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="112" width="594" height="112"/>
+                                                </variation>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMn-eH-YXK">
                                                 <rect key="frame" x="8" y="108" width="408" height="66"/>
@@ -138,6 +150,9 @@
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="8" y="46" width="408" height="66"/>
+                                                </variation>
                                             </label>
                                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1J-iw-lSU">
                                                 <rect key="frame" x="416" y="0.0" width="178" height="348"/>
@@ -160,6 +175,9 @@
                                                                 <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="53" y="173" width="72" height="50"/>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valentin Pertuisot" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UEA-Lv-8Sl">
                                                         <rect key="frame" x="0.0" y="255" width="178" height="20"/>
@@ -170,6 +188,9 @@
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="131" width="178" height="20"/>
+                                                        </variation>
                                                     </label>
                                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXX-aY-Drr" customClass="HCSStarRatingView">
                                                         <rect key="frame" x="44" y="275" width="90" height="18"/>
@@ -191,6 +212,9 @@
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="44" y="151" width="90" height="18"/>
+                                                        </variation>
                                                     </view>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="ProfilePictureDummy" translatesAutoresizingMaskIntoConstraints="NO" id="ZUc-EF-KBM" customClass="InspectableImageView" customModule="Mealting_Pot" customModuleProvider="target">
                                                         <rect key="frame" x="44" y="165" width="90" height="90"/>
@@ -210,6 +234,9 @@
                                                                 <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="44" y="41" width="90" height="90"/>
+                                                        </variation>
                                                     </imageView>
                                                 </subviews>
                                                 <animations/>
@@ -227,6 +254,9 @@
                                                     <constraint firstAttribute="trailing" secondItem="UEA-Lv-8Sl" secondAttribute="trailing" id="mhM-Gs-cZk"/>
                                                     <constraint firstItem="NXX-aY-Drr" firstAttribute="centerX" secondItem="J1J-iw-lSU" secondAttribute="centerX" id="y7n-ey-k4G"/>
                                                 </constraints>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="416" y="0.0" width="178" height="224"/>
+                                                </variation>
                                             </view>
                                         </subviews>
                                         <animations/>
@@ -249,35 +279,9 @@
                                             <constraint firstItem="Mqr-il-sko" firstAttribute="top" secondItem="gMn-eH-YXK" secondAttribute="bottom" id="tfb-5o-Lza"/>
                                             <constraint firstAttribute="trailing" secondItem="Mqr-il-sko" secondAttribute="trailing" id="x1K-1J-nPp"/>
                                         </constraints>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="594" height="224"/>
-                                        </variation>
                                     </view>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh7-jh-aLf">
-                                        <rect key="frame" x="0.0" y="753" width="694" height="0.0"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="124" id="lOy-le-sa0"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="lOy-le-sa0"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="224" width="594" height="124"/>
-                                            <mask key="constraints">
-                                                <include reference="lOy-le-sa0"/>
-                                            </mask>
-                                        </variation>
-                                    </mapView>
                                 </subviews>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Nh7-jh-aLf" secondAttribute="trailing" id="6Mr-7x-6oh"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nh7-jh-aLf" secondAttribute="bottom" id="OKP-vQ-SCN"/>
-                                    <constraint firstItem="Nh7-jh-aLf" firstAttribute="leading" secondItem="6Ha-IE-Dg0" secondAttribute="leading" id="f8W-3p-eqE"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="0.0"/>
@@ -286,26 +290,6 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="Nh7-jh-aLf"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="6Mr-7x-6oh"/>
-                                        <exclude reference="OKP-vQ-SCN"/>
-                                        <exclude reference="f8W-3p-eqE"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="subviews">
-                                        <include reference="Nh7-jh-aLf"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="6Mr-7x-6oh"/>
-                                        <include reference="OKP-vQ-SCN"/>
-                                        <include reference="f8W-3p-eqE"/>
-                                    </mask>
-                                </variation>
                             </stackView>
                         </subviews>
                         <animations/>
@@ -345,7 +329,6 @@
                 <outlet property="mealDateLabel" destination="jaK-kP-hyD" id="hdJ-RK-Sfj"/>
                 <outlet property="mealImageView" destination="dUS-Wu-5Lw" id="NAZ-Dq-Lv0"/>
                 <outlet property="mealLocationDescriptionLabel" destination="Sou-fK-m7o" id="QiP-ry-anM"/>
-                <outlet property="mealLocationPreviewMap" destination="Nh7-jh-aLf" id="5Nz-Z3-gvP"/>
                 <outlet property="mealPriceLabel" destination="wJg-wZ-bAn" id="fSo-sE-b2D"/>
                 <outlet property="mealRemainingSlotsLabel" destination="0KQ-c5-gCC" id="5ca-07-bzc"/>
                 <outlet property="mealTitle" destination="gMn-eH-YXK" id="QA8-Zz-qNW"/>
