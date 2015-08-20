@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,8 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return false
         }
         
+        UITabBar.appearance().tintColor = UIColor.mainColor()
+        
         // TODO: Implement LogIn Manager
-        let loggedIn = true;
+        let loggedIn = false;
         
         let mainVC : UIViewController
         
@@ -47,6 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = mainVC
         window.backgroundColor = UIColor.whiteColor()
         window.makeKeyAndVisible()
+        
+        if false == true
+        {
+            try! Realm().seed()
+        }
         
         return true
     }
