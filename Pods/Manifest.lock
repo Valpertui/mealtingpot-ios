@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (2.0.0-beta.1)
   - BigBrother (0.2.0)
+  - DZNEmptyDataSet (1.7.1)
   - FLAnimatedImage (1.0.8)
   - HCSStarRatingView (1.2)
   - PINCache (2.0)
@@ -27,6 +28,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `swift-2.0`)
   - BigBrother (from `https://github.com/marcelofabri/BigBrother`, branch `swift2.0`)
+  - DZNEmptyDataSet
   - HCSStarRatingView (from `https://github.com/hugocampossousa/HCSStarRatingView.git`)
   - PINRemoteImage
   - ReactiveCocoa
@@ -85,6 +87,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 96feccc1e48a735edb92395cf023ba4ed52bdb45
   BigBrother: 9221dff084a6672ccb8fd00a638ef4a4964abe51
+  DZNEmptyDataSet: 2a398066c2bf5848f7f693fb50954b5064debd12
   FLAnimatedImage: f9422f796135aff80d8c00b2afc48015bb746e24
   HCSStarRatingView: 7be97864e502af02887855d7a09f5efc9141e359
   PINCache: ca953ba93ce1edde056fdd99121ee65b295a08c9

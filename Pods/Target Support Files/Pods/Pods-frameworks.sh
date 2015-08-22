@@ -54,6 +54,7 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/Alamofire.framework'
   install_framework 'Pods/BigBrother.framework'
+  install_framework 'Pods/DZNEmptyDataSet.framework'
   install_framework 'Pods/FLAnimatedImage.framework'
   install_framework 'Pods/HCSStarRatingView.framework'
   install_framework 'Pods/PINCache.framework'
@@ -69,6 +70,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/Alamofire.framework'
   install_framework 'Pods/BigBrother.framework'
+  install_framework 'Pods/DZNEmptyDataSet.framework'
   install_framework 'Pods/FLAnimatedImage.framework'
   install_framework 'Pods/HCSStarRatingView.framework'
   install_framework 'Pods/PINCache.framework'

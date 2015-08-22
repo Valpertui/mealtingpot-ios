@@ -6,7 +6,6 @@
 //  Copyright © 2015 power. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension UIView {

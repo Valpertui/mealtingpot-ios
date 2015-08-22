@@ -6,11 +6,11 @@
 //  Copyright © 2015 power. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import RealmSwift
+import DZNEmptyDataSet
 
-class MealsViewController : UIViewController, UITableViewDelegate
+class MealsViewController : UIViewController, UITableViewDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate
 {
     @IBOutlet weak var tableView: UITableView!
     let dataSource : UITableViewDataSource = MealsTableViewDataSource()
@@ -19,6 +19,8 @@ class MealsViewController : UIViewController, UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
         tableView.registerNib(UINib(nibName: "MealTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "mealCell")
         tableView.separatorStyle = .None
         realmToken = try! Realm().addNotificationBlock { (notification, realm) -> Void in
@@ -33,4 +35,13 @@ class MealsViewController : UIViewController, UITableViewDelegate
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
        return 321
     }
+    
+    func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(string: "No meals yet 😞", attributes: [NSForegroundColorAttributeName:UIColor.mainColor(), NSFontAttributeName:UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)])
+    }
+    
+    func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(string: "Nobody is hosting a meal around you, but you can be the first !", attributes: [NSForegroundColorAttributeName:UIColor.mainColor(), NSFontAttributeName:UIFont.preferredFontForTextStyle(UIFontTextStyleBody)])
+    }
+    
 }
