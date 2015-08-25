@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import SwiftyJSON
 
 class Person : Object
 {
@@ -22,6 +23,22 @@ class Person : Object
     
     override static func primaryKey() -> String? {
         return "id"
+    }
+    
+    convenience init(jsonDict: JSON) {
+        self.init()
+        if let userId = jsonDict["id"].string {
+            id = userId
+        }
+        if let username = jsonDict["username"].string {
+            name = username
+        }
+        if let description = jsonDict["userDescription"].string {
+            userDescription = description
+        }
+        if let userImageURL = jsonDict["imageURL"].string {
+            imageURL = userImageURL
+        }
     }
     
     class func dummyPerson() -> Person

@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A707BE271B89E57A00BB90B6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A707BE261B89E57A00BB90B6 /* Router.swift */; };
+		A707BE2A1B89FE4000BB90B6 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A707BE291B89FE4000BB90B6 /* Helpers.swift */; };
+		A707BE2C1B8A014000BB90B6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A707BE2B1B8A014000BB90B6 /* String.swift */; };
+		A707BE2E1B8A048400BB90B6 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A707BE2D1B8A048400BB90B6 /* RegisterViewModel.swift */; };
 		A71A64001B3F916600486061 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71A63FF1B3F916600486061 /* MainStoryboard.storyboard */; };
+		A73235041B8A1A0F00B82907 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73235031B8A1A0F00B82907 /* ConfigurationManager.swift */; };
 		A73504601B67E6CB0043CFC3 /* VPVerticalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A735045F1B67E6CB0043CFC3 /* VPVerticalView.xib */; };
 		A74565131B40F624008727C2 /* UIView+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74565121B40F624008727C2 /* UIView+IB.swift */; };
 		A74565151B40FACB008727C2 /* InspectableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74565141B40FACB008727C2 /* InspectableImageView.swift */; };
@@ -34,6 +39,9 @@
 		A7D263F81B2CD0D50054009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D263F61B2CD0D50054009D /* LaunchScreen.storyboard */; };
 		A7D264031B2CD0D50054009D /* Mealting_PotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D264021B2CD0D50054009D /* Mealting_PotTests.swift */; };
 		A7D2640E1B2CD0D60054009D /* Mealting_PotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2640D1B2CD0D60054009D /* Mealting_PotUITests.swift */; };
+		A7D77C4F1B8BACD200A15F31 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D77C4E1B8BACD200A15F31 /* LoginViewModel.swift */; };
+		A7D77C511B8BB9BB00A15F31 /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D77C501B8BB9BB00A15F31 /* RealmObject.swift */; };
+		A7D77C531B8BD72100A15F31 /* MealsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D77C521B8BD72100A15F31 /* MealsViewControllerViewModel.swift */; };
 		A7EB23DE1B7E11C400A69A33 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EB23DD1B7E11C400A69A33 /* Person.swift */; };
 		A7EB23E01B7E147F00A69A33 /* MealCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EB23DF1B7E147F00A69A33 /* MealCategory.swift */; };
 		A7EB23E21B7E1C1000A69A33 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EB23E11B7E1C1000A69A33 /* Review.swift */; };
@@ -64,7 +72,12 @@
 /* Begin PBXFileReference section */
 		0E97DC207C615A9D8C10EB9F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		832B612D06068667C160C3DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A707BE261B89E57A00BB90B6 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A707BE291B89FE4000BB90B6 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A707BE2B1B8A014000BB90B6 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A707BE2D1B8A048400BB90B6 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		A71A63FF1B3F916600486061 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A73235031B8A1A0F00B82907 /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		A735045F1B67E6CB0043CFC3 /* VPVerticalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VPVerticalView.xib; sourceTree = "<group>"; };
 		A74565121B40F624008727C2 /* UIView+IB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IB.swift"; sourceTree = "<group>"; };
 		A74565141B40FACB008727C2 /* InspectableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectableImageView.swift; sourceTree = "<group>"; };
@@ -97,6 +110,9 @@
 		A7D264091B2CD0D60054009D /* Mealting PotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mealting PotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D2640D1B2CD0D60054009D /* Mealting_PotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mealting_PotUITests.swift; sourceTree = "<group>"; };
 		A7D2640F1B2CD0D60054009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D77C4E1B8BACD200A15F31 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A7D77C501B8BB9BB00A15F31 /* RealmObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
+		A7D77C521B8BD72100A15F31 /* MealsViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewControllerViewModel.swift; sourceTree = "<group>"; };
 		A7EB23DD1B7E11C400A69A33 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A7EB23DF1B7E147F00A69A33 /* MealCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCategory.swift; sourceTree = "<group>"; };
 		A7EB23E11B7E1C1000A69A33 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -152,9 +168,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A707BE281B89FD6000BB90B6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A707BE291B89FE4000BB90B6 /* Helpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		A71A64031B3F963700486061 /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				A707BE261B89E57A00BB90B6 /* Router.swift */,
+				A73235031B8A1A0F00B82907 /* ConfigurationManager.swift */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -176,6 +202,9 @@
 			children = (
 				A79543971B6D94F1000BA182 /* MealCellViewModel.swift */,
 				A7EB23E31B7E23D800A69A33 /* UserProfileViewModel.swift */,
+				A707BE2D1B8A048400BB90B6 /* RegisterViewModel.swift */,
+				A7D77C4E1B8BACD200A15F31 /* LoginViewModel.swift */,
+				A7D77C521B8BD72100A15F31 /* MealsViewControllerViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -224,6 +253,8 @@
 				A759EE3C1B84D7700064C418 /* MealtingPotColors.swift */,
 				A759EE441B85030F0064C418 /* Seeding.swift */,
 				A750B8051B88FAD00017B323 /* BaseTabBarController.swift */,
+				A707BE2B1B8A014000BB90B6 /* String.swift */,
+				A7D77C501B8BB9BB00A15F31 /* RealmObject.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +292,7 @@
 		A7D263F11B2CD0D50054009D /* Mealting Pot */ = {
 			isa = PBXGroup;
 			children = (
+				A707BE281B89FD6000BB90B6 /* Helpers */,
 				A74565161B410BC9008727C2 /* DataSources */,
 				A71A64091B3F968700486061 /* Extensions */,
 				A71A64081B3F967100486061 /* Storyboards */,
@@ -497,17 +529,25 @@
 				A750B80A1B88FCFC0017B323 /* NewMealViewController.swift in Sources */,
 				A74565151B40FACB008727C2 /* InspectableImageView.swift in Sources */,
 				A79543981B6D94F1000BA182 /* MealCellViewModel.swift in Sources */,
+				A707BE271B89E57A00BB90B6 /* Router.swift in Sources */,
 				A759EE431B84F7190064C418 /* RegisterViewController.swift in Sources */,
 				A759EE391B84B6D30064C418 /* Dish.swift in Sources */,
 				A759EE3D1B84D7700064C418 /* MealtingPotColors.swift in Sources */,
 				A759EE3F1B84F6F50064C418 /* OnboardingViewController.swift in Sources */,
+				A7D77C4F1B8BACD200A15F31 /* LoginViewModel.swift in Sources */,
 				A74565181B410BE1008727C2 /* MealsTableViewDataSource.swift in Sources */,
+				A707BE2C1B8A014000BB90B6 /* String.swift in Sources */,
+				A7D77C511B8BB9BB00A15F31 /* RealmObject.swift in Sources */,
 				A759EE411B84F70E0064C418 /* LoginViewController.swift in Sources */,
+				A73235041B8A1A0F00B82907 /* ConfigurationManager.swift in Sources */,
 				A7A569541B86511300B896AE /* BookingsViewController.swift in Sources */,
 				A750B8061B88FAD00017B323 /* BaseTabBarController.swift in Sources */,
 				A7F367931B40A15E00F4AC1A /* MealsViewController.swift in Sources */,
+				A707BE2A1B89FE4000BB90B6 /* Helpers.swift in Sources */,
 				A7F3679C1B40BA0B00F4AC1A /* MealTableViewCell.swift in Sources */,
+				A7D77C531B8BD72100A15F31 /* MealsViewControllerViewModel.swift in Sources */,
 				A7A569521B864CB300B896AE /* ProfileViewController.swift in Sources */,
+				A707BE2E1B8A048400BB90B6 /* RegisterViewModel.swift in Sources */,
 				A759EE451B85030F0064C418 /* Seeding.swift in Sources */,
 				A7EB23E21B7E1C1000A69A33 /* Review.swift in Sources */,
 			);

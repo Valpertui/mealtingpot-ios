@@ -3,18 +3,11 @@ PODS:
   - BigBrother (0.2.0)
   - DZNEmptyDataSet (1.7.1)
   - FLAnimatedImage (1.0.8)
-  - HCSStarRatingView (1.2)
+  - HCSStarRatingView (1.2.1)
   - PINCache (2.0)
   - PINRemoteImage (1.1.2):
     - FLAnimatedImage (>= 1.0)
     - PINCache (>= 2.0)
-  - ReactiveCocoa (2.5):
-    - ReactiveCocoa/UI (= 2.5)
-  - ReactiveCocoa/Core (2.5):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
-  - ReactiveCocoa/UI (2.5):
-    - ReactiveCocoa/Core
   - Realm (0.94.1):
     - Realm/Headers (= 0.94.1)
   - Realm/Headers (0.94.1)
@@ -31,7 +24,6 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - HCSStarRatingView (from `https://github.com/hugocampossousa/HCSStarRatingView.git`)
   - PINRemoteImage
-  - ReactiveCocoa
   - Realm (from `https://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
   - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
   - SVProgressHUD
@@ -63,22 +55,22 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Alamofire:
-    :commit: 97531ad0137a335653c83bb911bae33c67621f1e
+    :commit: e489c5fece971352b05b6ef185eca53f68bee1bc
     :git: https://github.com/Alamofire/Alamofire.git
   BigBrother:
     :commit: dbab84bfbb3b4b6d4c5c35df0035a04335ebb046
     :git: https://github.com/marcelofabri/BigBrother
   HCSStarRatingView:
-    :commit: 21057fb156761d0b94ef411c6fd7cf58cde023c1
+    :commit: c46c70f18299af9c7782430e1b3f77f6ae3f936c
     :git: https://github.com/hugocampossousa/HCSStarRatingView.git
   Realm:
-    :commit: 2e76fca59d9dfe0edf00cbc01f2cef85033426eb
+    :commit: a6f2c418401516ec21c016d656379e4eea4698d8
     :git: https://github.com/realm/realm-cocoa.git
   RealmSwift:
-    :commit: 2e76fca59d9dfe0edf00cbc01f2cef85033426eb
+    :commit: a6f2c418401516ec21c016d656379e4eea4698d8
     :git: https://github.com/realm/realm-cocoa.git
   SwiftyJSON:
-    :commit: d2455075224731f0449366c71e1a08d10d718e6d
+    :commit: f269523ac572979245baa99c8475eab73caf1e9b
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
   Timepiece:
     :commit: b6872e14c26953c784047c0d84f31ddcc7792732
@@ -89,10 +81,9 @@ SPEC CHECKSUMS:
   BigBrother: 9221dff084a6672ccb8fd00a638ef4a4964abe51
   DZNEmptyDataSet: 2a398066c2bf5848f7f693fb50954b5064debd12
   FLAnimatedImage: f9422f796135aff80d8c00b2afc48015bb746e24
-  HCSStarRatingView: 7be97864e502af02887855d7a09f5efc9141e359
+  HCSStarRatingView: e6b67acbd8dd81089111348dedde6b28b66d141c
   PINCache: ca953ba93ce1edde056fdd99121ee65b295a08c9
   PINRemoteImage: 0696e5f679deabf2e2ddfb57085fb978ca51bfc3
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Realm: aa8ba4c47efeecd83b2fb1c882e5f33e8c5676ca
   RealmSwift: 1cfcf6f9bd4de8674797d000de346d9588ca2028
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1

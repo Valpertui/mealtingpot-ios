@@ -13,12 +13,12 @@ import DZNEmptyDataSet
 class MealsViewController : UIViewController, UITableViewDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate
 {
     @IBOutlet weak var tableView: UITableView!
-    let dataSource : UITableViewDataSource = MealsTableViewDataSource()
+    let viewModel : MealsViewControllerViewModel = MealsViewControllerViewModel()
     var realmToken : NotificationToken!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = dataSource
+        tableView.dataSource = viewModel.dataSource
         tableView.emptyDataSetSource = self
         tableView.emptyDataSetDelegate = self
         tableView.registerNib(UINib(nibName: "MealTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "mealCell")
@@ -26,6 +26,10 @@ class MealsViewController : UIViewController, UITableViewDelegate, DZNEmptyDataS
         realmToken = try! Realm().addNotificationBlock { (notification, realm) -> Void in
                 self.tableView.reloadData()
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        viewModel.refreshMeals()
     }
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

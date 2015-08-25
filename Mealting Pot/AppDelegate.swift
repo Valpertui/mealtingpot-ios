@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.mainColor()
         
         // TODO: Implement LogIn Manager
-        let loggedIn = false;
+        let loggedIn = Router.accessToken != nil;
         
         let mainVC : UIViewController
         
