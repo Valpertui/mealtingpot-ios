@@ -26,6 +26,12 @@ enum Router: URLRequestConvertible {
     case DestroyUser
     case GetJwt(email: String, password: String)
     case GetMeals([String: AnyObject])
+    case PostMeal([String: AnyObject])
+    case PostPictureForMeal(mealId: String)
+    case GetPicturesForMeal(mealId: String)
+    case EditUser([String: AnyObject])
+    case BookMeal(mealId: String, seats: Int)
+    case GetSelfBookings
     
     var method: Alamofire.Method {
         switch self {
@@ -42,6 +48,18 @@ enum Router: URLRequestConvertible {
         case .GetJwt:
             return .GET
         case .GetMeals:
+            return .GET
+        case .PostMeal:
+            return .POST
+        case .PostPictureForMeal:
+            return .POST
+        case .GetPicturesForMeal:
+            return .GET
+        case .EditUser:
+            return .PUT
+        case .BookMeal:
+            return .POST
+        case .GetSelfBookings:
             return .GET
         }
     }
@@ -62,6 +80,18 @@ enum Router: URLRequestConvertible {
             return "/jwt"
         case .GetMeals:
             return "/meals"
+        case .PostMeal:
+            return "/meals"
+        case .PostPictureForMeal(let mealId):
+            return "/meals/\(mealId)/pictures"
+        case .GetPicturesForMeal(let mealId):
+            return "/meals/\(mealId)/pictures"
+        case .EditUser:
+            return "/users/me"
+        case .BookMeal(let mealId, _):
+            return "/meals/\(mealId)/bookings"
+        case .GetSelfBookings:
+            return "/users/me/bookings"
         }
     }
     
@@ -92,8 +122,16 @@ enum Router: URLRequestConvertible {
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: ["email": email, "password": password]).0
         case .UpdateUser(let parameters):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
+        case .PostMeal(let parameters):
+            return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
         case .GetMeals(let parameters):
             return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: parameters).0
+        case .PostPictureForMeal:
+            return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: ["name": NSUUID().UUIDString, "type":"img/jpeg"]).0
+        case .EditUser(let parameters):
+            return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
+        case .BookMeal(_, let seats):
+            return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: ["seats": seats]).0
         default:
             return mutableURLRequest
         }

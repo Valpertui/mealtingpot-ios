@@ -10,22 +10,45 @@ import UIKit
 
 class EditProfileViewController: UIViewController {
 
+    let viewModel = EditUserViewModel()
+    
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        usernameTextField.text = viewModel.username
+        descriptionTextField.text = viewModel.description
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func saveTouched(sender: AnyObject) {
+        if let username = usernameTextField.text where username.length > 2{
+            viewModel.username = username
+        }
+        if let description = descriptionTextField.text {
+            viewModel.description = description
+        }
+        viewModel.editSelf()
+    }
 
     @IBAction func cancelTouched(sender: AnyObject) {
         //self.resignFirstResponder()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
     
     /*
     // MARK: - Navigation

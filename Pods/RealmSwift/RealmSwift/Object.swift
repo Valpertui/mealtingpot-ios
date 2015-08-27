@@ -77,7 +77,8 @@ public class Object: RLMObjectBase {
                        thrown if any required properties are not present and no default is set.
     */
     public init(value: AnyObject) {
-        super.init(value: value, schema: RLMSchema.sharedSchema())
+        self.dynamicType.sharedSchema() // ensure this class' objectSchema is loaded in the partialSharedSchema
+        super.init(value: value, schema: RLMSchema.partialSharedSchema())
     }
 
 
@@ -218,6 +219,7 @@ public class Object: RLMObjectBase {
 
 
 /// Object interface which allows untyped getters and setters for Objects.
+/// :nodoc:
 public final class DynamicObject : Object {
     private var listProperties = [String: List<DynamicObject>]()
 
@@ -241,7 +243,8 @@ public final class DynamicObject : Object {
         self[key] = value
     }
 
-    @objc private class func shouldPersistToRealm() -> Bool {
+    /// :nodoc:
+    public override class func shouldIncludeInDefaultSchema() -> Bool {
         return false;
     }
 }

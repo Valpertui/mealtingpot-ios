@@ -587,18 +587,18 @@ EXPORT COMPLIANCE
 You understand that the Software may contain cryptographic functions that may be
 subject to export restrictions, and you represent and warrant that you are not
 located in a country that is subject to United States export restriction or embargo,
-including Cuba, Iran, North Korea, Sudan, or Syria, and that you are not on the
-Department of Commerce list of Denied Persons, Unverified Parties, or affiliated
-with a Restricted Entity.
+including Cuba, Iran, North Korea, Sudan, Syria or the Crimea region, and that you
+are not on the Department of Commerce list of Denied Persons, Unverified Parties,
+or affiliated with a Restricted Entity.
 
 You agree to comply with all export, re-export and import restrictions and
 regulations of the Department of Commerce or other agency or authority of the
 United States or other applicable countries. You also agree not to transfer, or
 authorize the transfer of, directly or indirectly, the Software to any prohibited
-country, including Cuba, Iran, North Korea, Sudan, or Syria, or to any person or
-organization on or affiliated with the Department of Commerce lists of Denied
-Persons, Unverified Parties or Restricted Entities, or otherwise in violation of any
-such restrictions or regulations.
+country, including Cuba, Iran, North Korea, Sudan, Syria or the Crimea region,
+or to any person or organization on or affiliated with the Department of
+Commerce lists of Denied Persons, Unverified Parties or Restricted Entities, or
+otherwise in violation of any such restrictions or regulations.
 
 
 ## RealmSwift
@@ -860,18 +860,18 @@ EXPORT COMPLIANCE
 You understand that the Software may contain cryptographic functions that may be
 subject to export restrictions, and you represent and warrant that you are not
 located in a country that is subject to United States export restriction or embargo,
-including Cuba, Iran, North Korea, Sudan, or Syria, and that you are not on the
-Department of Commerce list of Denied Persons, Unverified Parties, or affiliated
-with a Restricted Entity.
+including Cuba, Iran, North Korea, Sudan, Syria or the Crimea region, and that you
+are not on the Department of Commerce list of Denied Persons, Unverified Parties,
+or affiliated with a Restricted Entity.
 
 You agree to comply with all export, re-export and import restrictions and
 regulations of the Department of Commerce or other agency or authority of the
 United States or other applicable countries. You also agree not to transfer, or
 authorize the transfer of, directly or indirectly, the Software to any prohibited
-country, including Cuba, Iran, North Korea, Sudan, or Syria, or to any person or
-organization on or affiliated with the Department of Commerce lists of Denied
-Persons, Unverified Parties or Restricted Entities, or otherwise in violation of any
-such restrictions or regulations.
+country, including Cuba, Iran, North Korea, Sudan, Syria or the Crimea region,
+or to any person or organization on or affiliated with the Department of
+Commerce lists of Denied Persons, Unverified Parties or Restricted Entities, or
+otherwise in violation of any such restrictions or regulations.
 
 
 ## SVProgressHUD
@@ -903,6 +903,32 @@ A different license may apply to other resources included in this package,
 including Freepik Icons. Please consult their 
 respective headers for the terms of their individual licenses.
 
+## SZTextView
+
+Copyright (c) 2013 glaszig <glaszig@gmail.com>
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
 ## SwiftyJSON
 
 The MIT License (MIT)
@@ -927,6 +953,29 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
+## TPKeyboardAvoiding
+
+Copyright (c) 2013 Michael Tyson
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source
+   distribution.
 
 ## Timepiece
 

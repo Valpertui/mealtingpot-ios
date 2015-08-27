@@ -40,7 +40,7 @@ In case you don't want to use the precompiled version, you can build Realm yours
 
 Prerequisites:
 
-* Building Realm requires Xcode 6.3, 6.4, or 7.0 beta 4.
+* Building Realm requires Xcode 6.3, 6.4, or 7.0 beta 6.
 * Building Realm documentation requires [appledoc](https://github.com/tomaz/appledoc)
 
 Once you have all the necessary prerequisites, building Realm.framework just takes a single command: `sh build.sh build`. You'll need an internet connection the first time you build Realm to download the core binary.
@@ -57,6 +57,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details!
 
 Realm Objective-C & Realm Swift are published under the Apache 2.0 license.  
 The underlying core is available under the [Realm Core Binary License](https://github.com/realm/realm-cocoa/blob/master/LICENSE#L210-L243) while we [work to open-source it under the Apache 2.0 license](https://realm.io/docs/objc/latest/#faq).
+
+**This product is not being made available to any person located in Cuba, Iran,
+North Korea, Sudan, Syria or the Crimea region, or to any other person that is
+not eligible to receive the product under U.S. law.**
 
 ## Feedback
 

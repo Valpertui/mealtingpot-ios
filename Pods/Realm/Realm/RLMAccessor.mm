@@ -576,19 +576,31 @@ static RLMAccessorCode accessorCodeForType(char objcTypeCode, RLMPropertyType rl
     }
 }
 
+static void RLMReplaceShouldIncludeInDefaultSchemaMethod(Class cls, bool shouldInclude) {
+    Class metaClass = objc_getMetaClass(class_getName(cls));
+    IMP imp = imp_implementationWithBlock(^(Class){ return shouldInclude; });
+    class_addMethod(metaClass, @selector(shouldIncludeInDefaultSchema), imp, "b@:");
+}
+
 // implement the class method className on accessors to return the className of the
 // base object
 void RLMReplaceClassNameMethod(Class accessorClass, NSString *className) {
     Class metaClass = objc_getMetaClass(class_getName(accessorClass));
-    IMP imp = imp_implementationWithBlock(^{ return className; });
-    class_addMethod(metaClass, @selector(className), imp, "@:");
+    IMP imp = imp_implementationWithBlock(^(Class){ return className; });
+    class_addMethod(metaClass, @selector(className), imp, "@@:");
 }
 
 // implement the shared schema method
 void RLMReplaceSharedSchemaMethod(Class accessorClass, RLMObjectSchema *schema) {
     Class metaClass = objc_getMetaClass(class_getName(accessorClass));
-    IMP imp = imp_implementationWithBlock(^{ return schema; });
-    class_replaceMethod(metaClass, @selector(sharedSchema), imp, "@:");
+    IMP imp = imp_implementationWithBlock(^(Class){ return schema; });
+    class_replaceMethod(metaClass, @selector(sharedSchema), imp, "@@:");
+}
+
+void RLMReplaceSharedSchemaMethodWithBlock(Class accessorClass, RLMObjectSchema *(^method)(Class)) {
+    Class metaClass = objc_getMetaClass(class_getName(accessorClass));
+    IMP imp = imp_implementationWithBlock(method);
+    class_replaceMethod(metaClass, @selector(sharedSchema), imp, "@@:");
 }
 
 static Class RLMCreateAccessorClass(Class objectClass,
@@ -632,6 +644,7 @@ static Class RLMCreateAccessorClass(Class objectClass,
     
     // implement className for accessor to return base className
     RLMReplaceClassNameMethod(accClass, schema.className);
+    RLMReplaceShouldIncludeInDefaultSchemaMethod(accClass, false);
 
     return accClass;
 }
@@ -671,6 +684,9 @@ void RLMDynamicValidatedSet(RLMObjectBase *obj, NSString *propName, id val) {
     RLMProperty *prop = schema[propName];
     if (!prop) {
         @throw RLMException([NSString stringWithFormat:@"Invalid property name `%@` for class `%@`.", propName, obj->_objectSchema.className]);
+    }
+    if (prop.isPrimary) {
+        @throw RLMException(@"Primary key can't be changed to '%@' after an object is inserted.", val);
     }
     if (!RLMIsObjectValidForProperty(val, prop)) {
         @throw RLMException([NSString stringWithFormat:@"Invalid property value `%@` for property `%@` of class `%@`", val, propName, obj->_objectSchema.className]);

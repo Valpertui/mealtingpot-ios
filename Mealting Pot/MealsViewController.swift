@@ -14,7 +14,6 @@ class MealsViewController : UIViewController, UITableViewDelegate, DZNEmptyDataS
 {
     @IBOutlet weak var tableView: UITableView!
     let viewModel : MealsViewControllerViewModel = MealsViewControllerViewModel()
-    var realmToken : NotificationToken!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +22,13 @@ class MealsViewController : UIViewController, UITableViewDelegate, DZNEmptyDataS
         tableView.emptyDataSetDelegate = self
         tableView.registerNib(UINib(nibName: "MealTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "mealCell")
         tableView.separatorStyle = .None
-        realmToken = try! Realm().addNotificationBlock { (notification, realm) -> Void in
-                self.tableView.reloadData()
-        }
+        self.tableView.reloadData()
     }
     
     override func viewWillAppear(animated: Bool) {
-        viewModel.refreshMeals()
+        viewModel.refreshMeals { (success : Bool) -> Void in
+            self.tableView.reloadData()
+        }
     }
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -48,4 +47,22 @@ class MealsViewController : UIViewController, UITableViewDelegate, DZNEmptyDataS
         return NSAttributedString(string: "Nobody is hosting a meal around you, but you can be the first !", attributes: [NSForegroundColorAttributeName:UIColor.mainColor(), NSFontAttributeName:UIFont.preferredFontForTextStyle(UIFontTextStyleBody)])
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("showMealVC", sender: self.viewModel.dataSource.meals[indexPath.row] )
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let identifier = segue.identifier else {
+            return
+        }
+        switch identifier {
+            case "showMealVC":
+            let destVC = segue.destinationViewController as! MealViewController
+            if let meal = sender as? Meal {
+                destVC.viewModel = MealViewModel(meal: meal)
+            }
+        default:
+            break
+        }
+    }
 }

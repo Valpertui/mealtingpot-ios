@@ -13,7 +13,7 @@ extension Object {
     func save(){
         let realm = try! Realm()
         realm.write { () -> Void in
-            realm.add(self)
+            realm.add(self, update:true)
         }
     }
 }

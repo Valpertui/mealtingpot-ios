@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import SwiftyJSON
 
 class Meal : Object
 {
@@ -16,6 +17,8 @@ class Meal : Object
     dynamic var mealDescription : String    = ""
     dynamic var price : Double          = 0.0
     dynamic var category : String = ""
+    dynamic var format : String = ""
+    dynamic var userId : String = ""
     
     dynamic var host: Person?
     
@@ -26,10 +29,57 @@ class Meal : Object
     dynamic var hasLocation : Bool = false
     dynamic var longitude : Double = 0.0
     dynamic var latitude : Double = 0.0
-    let guests = List<Person>()
+    let dishes = List<Dish>()
     
     override static func primaryKey() -> String? {
         return "id"
+    }
+    
+    convenience init(jsonDict: JSON) {
+        self.init()
+        if let mealId = jsonDict["id"].string {
+            id = mealId
+        }
+        if let userId = jsonDict["userId"].string {
+            self.userId = userId
+        }
+        
+        if let mealTitle = jsonDict["title"].string {
+            title = mealTitle
+        }
+        if let description = jsonDict["description"].string {
+            mealDescription = description
+        }
+        if let mealPrice = jsonDict["price"].string {
+            price = Double(mealPrice)!
+        }
+        if let cuisine = jsonDict["cuisine"].string {
+            category = cuisine
+        }
+        if let format = jsonDict["format"].string {
+            self.format = format
+        }
+        
+        if let mealDate = jsonDict["date"].string {
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'SSS'Z'"
+            if let resultDate = dateFormatter.dateFromString(mealDate) {
+                date = resultDate
+            }
+        }
+        if let seatsNumber = jsonDict["seats"].int {
+            maxGuests = seatsNumber
+        }
+        if let location = jsonDict["location"].dictionary {
+            hasLocation = true
+            if let latitude = location["latitude"]?.double {
+                self.latitude = latitude
+            }
+            if let longitude = location["longitude"]?.double {
+                self.longitude = longitude
+            }
+        }
+        
     }
     
     class func dummyMeal() -> Meal

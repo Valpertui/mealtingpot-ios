@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import BigBrother
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -55,6 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         {
             try! Realm().seed()
         }
+        
+        //BigBrother.addToSharedSession()
         
         return true
     }

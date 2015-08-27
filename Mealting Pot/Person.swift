@@ -17,6 +17,7 @@ class Person : Object
     dynamic var userDescription = ""
     dynamic var imageURL : String = ""
     dynamic var rating : Double = 0.0
+    dynamic var email = ""
     let reviews = List<Review>()
     let guestHistory = List<Meal>()
     let hostHistory = List<Meal>()
@@ -33,7 +34,10 @@ class Person : Object
         if let username = jsonDict["username"].string {
             name = username
         }
-        if let description = jsonDict["userDescription"].string {
+        if let email = jsonDict["email"].string {
+            self.email = email
+        }
+        if let description = jsonDict["bio"].string {
             userDescription = description
         }
         if let userImageURL = jsonDict["imageURL"].string {

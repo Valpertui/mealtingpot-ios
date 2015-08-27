@@ -38,9 +38,7 @@ const NSUInteger RLMDescriptionMaxDepth = 5;
 // standalone init
 - (instancetype)init {
     self = [super init];
-    if (self && RLMSchema.sharedSchema) {
-        _objectSchema = [self.class sharedSchema];
-
+    if (self && (_objectSchema = [self.class sharedSchema])) {
         // set default values
         if (!_objectSchema.isSwiftClass) {
             NSDictionary *dict = RLMDefaultValuesForObjectSchema(_objectSchema);
@@ -209,6 +207,14 @@ static id RLMValidatedObjectForProperty(id obj, RLMProperty *prop, RLMSchema *sc
     return [NSString stringWithString:mString];
 }
 
+- (RLMRealm *)realm {
+    return _realm;
+}
+
+- (RLMObjectSchema *)objectSchema {
+    return _objectSchema;
+}
+
 - (BOOL)isInvalidated {
     // if not standalone and our accessor has been detached, we have been deleted
     return self.class == _objectSchema.accessorClass && !_row.is_attached();
@@ -239,7 +245,7 @@ static id RLMValidatedObjectForProperty(id obj, RLMProperty *prop, RLMSchema *sc
     }
 }
 
-+ (BOOL)shouldPersistToRealm {
++ (BOOL)shouldIncludeInDefaultSchema {
     return RLMIsObjectSubclass(self);
 }
 

@@ -371,7 +371,6 @@ static id RLMAutorelease(id value) {
     bool dynamic = configuration.dynamic;
     bool readOnly = configuration.readOnly;
 
-
     if (!path || path.length == 0) {
         @throw RLMException([NSString stringWithFormat:@"Path '%@' is not valid", path]);
     }
@@ -380,10 +379,6 @@ static id RLMAutorelease(id value) {
         @throw RLMException([NSString stringWithFormat:@"%@ \
                              can only be called from a thread with a runloop.",
                              NSStringFromSelector(_cmd)]);
-    }
-
-    if (customSchema && !dynamic) {
-        @throw RLMException(@"Custom schema only supported when using dynamic Realms");
     }
 
     // try to reuse existing realm first
@@ -556,7 +551,7 @@ static void CheckReadWrite(RLMRealm *realm, NSString *msg=@"Cannot write to a re
     configuration.readOnly = _readOnly;
     configuration.encryptionKey = _encryptionKey;
     configuration.dynamic = _dynamic;
-    configuration.customSchema = _schema == RLMSchema.sharedSchema ? nil : _schema;
+    configuration.customSchema = _schema;
     return configuration;
 }
 
@@ -856,6 +851,10 @@ static void CheckReadWrite(RLMRealm *realm, NSString *msg=@"Cannot write to a re
 
 - (RLMResults *)objects:(NSString *)objectClassName withPredicate:(NSPredicate *)predicate {
     return RLMGetObjects(self, objectClassName, predicate);
+}
+
+- (RLMObject *)objectWithClassName:(NSString *)className forPrimaryKey:(id)primaryKey {
+    return RLMGetObject(self, className, primaryKey);
 }
 
 + (void)setDefaultRealmSchemaVersion:(uint64_t)version withMigrationBlock:(RLMMigrationBlock)block {

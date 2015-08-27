@@ -11,7 +11,7 @@ import RealmSwift
 
 class MealsTableViewDataSource : NSObject, UITableViewDataSource
 {
-    var meals = try! Realm().objects(Meal).filter("date > %@", NSDate())
+    var meals = try! Realm().objects(Meal).filter("date > %@", NSDate()).sorted("date", ascending: true)
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -28,6 +28,11 @@ class MealsTableViewDataSource : NSObject, UITableViewDataSource
         let viewModel : MealCellViewModel! = MealCellViewModel(meals[indexPath.row])
         
         cell.mealViewModel = viewModel
+        cell.mealViewModel.getPicture{ (success, imageURL) -> Void in
+            if success == true && imageURL != nil {
+               // cell.mealImageView.pin_setImageFromURL(imageURL)
+            }
+        }
         
         return cell
     }

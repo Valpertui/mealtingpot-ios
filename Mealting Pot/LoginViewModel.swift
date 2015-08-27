@@ -23,7 +23,6 @@ class LoginViewModel
             .responseJSON { (_, _, result) -> Void in
                 switch result {
                 case .Success(let value):
-                    print(value)
                     var json = JSON(value)
                     if let access_token = json["access_token"].string {
                         Router.accessToken = access_token

@@ -25,8 +25,6 @@ class RegisterViewModel
                 debugPrint(urlRequest)
                 switch result {
                 case .Success(let value):
-                    print(value)
-                    
                     let user = Person(jsonDict:JSON(value))
                     user.save()
                     ConfigurationManager.userId = user.id
@@ -36,7 +34,6 @@ class RegisterViewModel
                         .responseJSON { (_, _, result) -> Void in
                             switch result {
                             case .Success(let value):
-                                print(value)
                                 var json = JSON(value)
                                 if let access_token = json["access_token"].string {
                                     Router.accessToken = access_token

@@ -18,3 +18,6 @@ pod 'BigBrother', :git => 'https://github.com/marcelofabri/BigBrother', :branch 
 #pod 'Moya', :git => "https://github.com/moya/moya", :branch => 'swift-2.0'
 pod 'Timepiece', :git => 'https://github.com/naoty/Timepiece', :branch => 'swift-2.0'
 pod 'DZNEmptyDataSet'
+pod 'SZTextView'
+pod 'TPKeyboardAvoiding'
+#pod 'SwiftLocation'

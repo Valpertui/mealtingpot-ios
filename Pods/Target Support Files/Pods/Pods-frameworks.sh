@@ -62,7 +62,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/Realm.framework'
   install_framework 'Pods/RealmSwift.framework'
   install_framework 'Pods/SVProgressHUD.framework'
+  install_framework 'Pods/SZTextView.framework'
   install_framework 'Pods/SwiftyJSON.framework'
+  install_framework 'Pods/TPKeyboardAvoiding.framework'
   install_framework 'Pods/Timepiece.framework'
   install_framework 'Pods/Toucan.framework'
 fi
@@ -77,7 +79,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/Realm.framework'
   install_framework 'Pods/RealmSwift.framework'
   install_framework 'Pods/SVProgressHUD.framework'
+  install_framework 'Pods/SZTextView.framework'
   install_framework 'Pods/SwiftyJSON.framework'
+  install_framework 'Pods/TPKeyboardAvoiding.framework'
   install_framework 'Pods/Timepiece.framework'
   install_framework 'Pods/Toucan.framework'
 fi

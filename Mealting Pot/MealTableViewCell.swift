@@ -32,13 +32,15 @@ class MealTableViewCell: UITableViewCell {
     @IBOutlet weak var slotsView: VPVerticalView!
     @IBOutlet weak var priceView: VPVerticalView!
     
+    let geocoder = CLGeocoder()
+    
     var mealViewModel : MealCellViewModel! {
         didSet {
             
-            mealImageView.pin_setImageFromURL(mealViewModel.mealImageURL, placeholderImage: UIImage(named: "ProfilePictureDummy"))
+            profilePictureImageView.pin_setImageFromURL(mealViewModel.mealImageURL, placeholderImage: UIImage(named: "ProfilePictureDummy"))
             mealTitleLabel.text = mealViewModel.title
             mealCategoryLabel.text = mealViewModel.category
-            profilePictureImageView.pin_setImageFromURL(mealViewModel.hostProfilePictureURL, placeholderImage: UIImage(named: "MealCellBackgroundPlaceholder"))
+            mealImageView.pin_setImageFromURL(mealViewModel.hostProfilePictureURL, placeholderImage: UIImage(named: "MealCellBackgroundPlaceholder"))
             hostUsernameLabel.text = mealViewModel.hostUsername
             hostDescriptionLabel.text = mealViewModel.hostDescription
             hostRatingView.value = CGFloat(mealViewModel.hostRating)
@@ -48,9 +50,36 @@ class MealTableViewCell: UITableViewCell {
             formatter.dateStyle = .ShortStyle
             formatter.timeStyle = .ShortStyle
             dateView.text = formatter.stringFromDate(mealViewModel.date)
-            
             slotsView.text = "\(mealViewModel.registeredGuestsCount)/\(mealViewModel.maxGuests)\nfilled seats"
             priceView.text = "£\(mealViewModel.price)"
+            self.locationView.text = "Searching ..."
+            geocoder.reverseGeocodeLocation(CLLocation(latitude: mealViewModel.latitude, longitude: mealViewModel.longitude)) { (placemarks, error) -> Void in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                guard let placemarks = placemarks else {
+                    self.locationView.text = "No address"
+                    return
+                }
+               _ = placemarks.map { placemark in
+                    var address = ""
+                    if let subThrougfare = placemark.subThoroughfare {
+                        address += "\(subThrougfare) "
+                    }
+                    if let thoroughfare = placemark.thoroughfare {
+                        address += "\(thoroughfare) "
+                    }
+                    if let locality = placemark.locality {
+                        address += "\(locality)"
+                    }
+                    guard address != "" else {
+                        return
+                    }
+                    self.locationView.text = address
+                    return
+                }
+            }
         }
     }
     

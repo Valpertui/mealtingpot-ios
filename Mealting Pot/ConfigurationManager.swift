@@ -26,7 +26,7 @@ class ConfigurationManager {
             guard let userId = ConfigurationManager.userId else {
                 return nil
             }
-            return try! Realm().objects(Person).filter("id == %@", userId)[0]
+            return try! Realm().objects(Person).filter("id == %@", userId).first
         }
     }
     
