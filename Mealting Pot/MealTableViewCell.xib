@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10089" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="890" height="520"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="890" height="519"/>
+                <rect key="frame" x="0.0" y="0.0" width="890" height="519.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJk-pH-yld" userLabel="Card View">
@@ -33,7 +33,6 @@
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePictureDummy" translatesAutoresizingMaskIntoConstraints="NO" id="TKq-EN-2Cm" customClass="InspectableImageView" customModule="Mealting_Pot" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
-                                                                <animations/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="TKq-EN-2Cm" secondAttribute="height" id="Jry-7v-MCz"/>
                                                                 </constraints>
@@ -51,32 +50,27 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jordan Van Weleghem" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wn4-wO-XA6">
                                                                         <rect key="frame" x="0.0" y="0.0" width="730" height="23"/>
-                                                                        <animations/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a french cook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWO-dg-jJz">
                                                                         <rect key="frame" x="0.0" y="23" width="730" height="23"/>
-                                                                        <animations/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <animations/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="Wn4-wO-XA6" secondAttribute="trailing" id="6e7-xT-SBt"/>
                                                                     <constraint firstAttribute="trailingMargin" secondItem="QWO-dg-jJz" secondAttribute="trailing" id="j2d-df-ud6"/>
                                                                 </constraints>
                                                             </stackView>
                                                         </subviews>
-                                                        <animations/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Q-m5-Cvc" customClass="HCSStarRatingView">
                                                         <rect key="frame" x="786" y="18" width="80" height="14"/>
-                                                        <animations/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <color key="tintColor" red="0.85882352939999995" green="0.039215686270000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -96,7 +90,6 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Z2Q-m5-Cvc" secondAttribute="bottom" constant="18" id="2WP-PC-eeo"/>
@@ -115,10 +108,8 @@
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MealCellBackgroundPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="cCB-pD-F7f" customClass="InspectableImageView" customModule="Mealting_Pot" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="874" height="160"/>
-                                                        <animations/>
                                                     </imageView>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="cCB-pD-F7f" firstAttribute="top" secondItem="y8Z-Fc-hvs" secondAttribute="top" id="C6a-LV-F97"/>
@@ -136,7 +127,6 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cassoulet premium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5x-cL-ESO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="23"/>
-                                                                <animations/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -144,17 +134,14 @@
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="French Cuisine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAp-jf-bkz">
                                                                 <rect key="frame" x="0.0" y="23" width="84" height="17"/>
-                                                                <animations/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <animations/>
                                                     </stackView>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="wWY-g4-4Dl" firstAttribute="leading" secondItem="QHf-4h-qg2" secondAttribute="leadingMargin" id="1eg-Yz-Sxr"/>
@@ -166,7 +153,6 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9N-eA-6TG" userLabel="Separator view">
                                                 <rect key="frame" x="87" y="250" width="700" height="1"/>
-                                                <animations/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Bdp-FE-zBI"/>
@@ -180,10 +166,9 @@
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-OV-kiU" customClass="VPVerticalView" customModule="Mealting_Pot" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="219" height="54"/>
-                                                                <animations/>
                                                                 <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="LocationIcon"/>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="locationIcon"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
                                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                     </userDefinedRuntimeAttribute>
@@ -191,7 +176,6 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-53-mLI" customClass="VPVerticalView" customModule="Mealting_Pot" customModuleProvider="target">
                                                                 <rect key="frame" x="219" y="0.0" width="218" height="54"/>
-                                                                <animations/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -202,7 +186,6 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsl-bF-9Lk" customClass="VPVerticalView" customModule="Mealting_Pot" customModuleProvider="target">
                                                                 <rect key="frame" x="437" y="0.0" width="219" height="54"/>
-                                                                <animations/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -213,7 +196,6 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogX-gA-2Gb" customClass="VPVerticalView" customModule="Mealting_Pot" customModuleProvider="target">
                                                                 <rect key="frame" x="656" y="0.0" width="218" height="54"/>
-                                                                <animations/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -223,7 +205,6 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
-                                                        <animations/>
                                                         <constraints>
                                                             <constraint firstItem="FGr-53-mLI" firstAttribute="top" secondItem="Zjc-yQ-c7z" secondAttribute="top" id="4IM-56-vrF"/>
                                                             <constraint firstAttribute="bottom" secondItem="fjP-OV-kiU" secondAttribute="bottom" id="CwD-FH-E4E"/>
@@ -236,7 +217,6 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="Zjc-yQ-c7z" firstAttribute="leading" secondItem="Lqm-3Y-0Lj" secondAttribute="leading" id="4tT-at-JOc"/>
@@ -247,7 +227,6 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstItem="QHf-4h-qg2" firstAttribute="leading" secondItem="20V-oj-ugQ" secondAttribute="leading" id="3Id-7Z-CVy"/>
                                             <constraint firstAttribute="trailing" secondItem="y8Z-Fc-hvs" secondAttribute="trailing" id="8MW-Ef-FQd"/>
@@ -260,7 +239,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="20V-oj-ugQ" firstAttribute="leading" secondItem="F2T-ce-gy4" secondAttribute="leading" id="Mn3-El-bw9"/>
@@ -281,7 +259,6 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="305" id="Cgg-jk-QXv"/>
@@ -303,7 +280,6 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="SJk-pH-yld" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jr3-0r-iyb"/>
                     <constraint firstAttribute="trailingMargin" secondItem="SJk-pH-yld" secondAttribute="trailing" id="k7y-g0-4zx"/>
@@ -311,7 +287,6 @@
                     <constraint firstItem="SJk-pH-yld" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nA8-HQ-pQM"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <connections>
                 <outlet property="cardView" destination="SJk-pH-yld" id="4nz-QB-wdr"/>
                 <outlet property="dateView" destination="FGr-53-mLI" id="tFU-jE-TpU"/>
@@ -332,10 +307,10 @@
     </objects>
     <resources>
         <image name="ClockIcon" width="32" height="32"/>
-        <image name="LocationIcon" width="17" height="24"/>
         <image name="MealCellBackgroundPlaceholder" width="1920" height="1200"/>
         <image name="PriceIcon" width="25" height="24"/>
         <image name="ProfilePictureDummy" width="320" height="320"/>
         <image name="SeatIcon" width="24" height="24"/>
+        <image name="locationIcon" width="17" height="24"/>
     </resources>
 </document>

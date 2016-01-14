@@ -33,16 +33,16 @@
 		A759EE411B84F70E0064C418 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759EE401B84F70E0064C418 /* LoginViewController.swift */; };
 		A759EE431B84F7190064C418 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759EE421B84F7190064C418 /* RegisterViewController.swift */; };
 		A759EE451B85030F0064C418 /* Seeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759EE441B85030F0064C418 /* Seeding.swift */; };
-		A78824401B8E04520082C8D4 /* EditUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788243F1B8E04520082C8D4 /* EditUserViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		A78824401B8E04520082C8D4 /* EditUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788243F1B8E04520082C8D4 /* EditUserViewModel.swift */; };
 		A79543961B6D94E2000BA182 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79543951B6D94E2000BA182 /* Meal.swift */; };
 		A79543981B6D94F1000BA182 /* MealCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79543971B6D94F1000BA182 /* MealCellViewModel.swift */; };
 		A7A569501B864CA100B896AE /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5694F1B864CA100B896AE /* MealViewController.swift */; };
 		A7A569521B864CB300B896AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A569511B864CB300B896AE /* ProfileViewController.swift */; };
 		A7A569541B86511300B896AE /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A569531B86511300B896AE /* BookingsViewController.swift */; };
-		A7A752271B8E4C110030564D /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A752261B8E4C110030564D /* MealViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		A7A752291B8E4DEF0030564D /* DishesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A752281B8E4DEF0030564D /* DishesDataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		A7A7522B1B8E6D150030564D /* BookingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7522A1B8E6D150030564D /* BookingsDataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		A7A7522D1B8E75240030564D /* BookingsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7522C1B8E75240030564D /* BookingsViewControllerViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		A7A752271B8E4C110030564D /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A752261B8E4C110030564D /* MealViewModel.swift */; };
+		A7A752291B8E4DEF0030564D /* DishesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A752281B8E4DEF0030564D /* DishesDataSource.swift */; };
+		A7A7522B1B8E6D150030564D /* BookingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7522A1B8E6D150030564D /* BookingsDataSource.swift */; };
+		A7A7522D1B8E75240030564D /* BookingsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7522C1B8E75240030564D /* BookingsViewControllerViewModel.swift */; };
 		A7B7A54D1B8DBE3F00767CE1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7A54C1B8DBE3F00767CE1 /* CoreLocation.framework */; };
 		A7C24DFA1B692D28003B4DE3 /* VPVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C24DF91B692D28003B4DE3 /* VPVerticalView.swift */; };
 		A7D263F31B2CD0D50054009D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D263F21B2CD0D50054009D /* AppDelegate.swift */; };
@@ -60,7 +60,7 @@
 		A7F367931B40A15E00F4AC1A /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F367921B40A15E00F4AC1A /* MealsViewController.swift */; };
 		A7F3679C1B40BA0B00F4AC1A /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3679A1B40BA0B00F4AC1A /* MealTableViewCell.swift */; };
 		A7F3679D1B40BA0B00F4AC1A /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F3679B1B40BA0B00F4AC1A /* MealTableViewCell.xib */; };
-		DCB1E30F9C0CDA992F37FEDE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C03F7EAE97C50A622E252 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DCB1E30F9C0CDA992F37FEDE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C03F7EAE97C50A622E252 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

@@ -11,7 +11,8 @@ import RealmSwift
 
 class MealsTableViewDataSource : NSObject, UITableViewDataSource
 {
-    var meals = try! Realm().objects(Meal).filter("date > %@", NSDate()).sorted("date", ascending: true)
+    var meals = try! Realm().objects(Meal).sorted("date", ascending: true)
+//    var meals = try! Realm().objects(Meal).filter("date > %@", NSDate()).sorted("date", ascending: true)
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
